@@ -45,6 +45,7 @@ Read this before you install anything.
   start a track while another of your devices is playing on Spotify.
 - **Analyses the sound (optional).** The sound analysis service rates mood and voice or instrumental from
   Deezer's 30-second previews with the Essentia models. The results appear as a mood line on the covers.
+  Needs an x86_64 server; details, numbers and recommendations in [docs/SOUND.md](docs/SOUND.md).
 - **Status page and health file.** A password-protected status page shows the playlists, unmatched tracks
   (with a way to pin the right TIDAL track) and the feedback queue. A `health.json` file lists current problems
   for any watchdog.

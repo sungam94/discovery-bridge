@@ -132,7 +132,8 @@ docker compose up -d --build
 
 This starts the bridge, plus the adapter and the sound analysis if `COMPOSE_PROFILES` in `.env` names them. The
 first build of the adapter and the analysis images takes a while; the analysis image downloads the Essentia
-models.
+models. What the sound analysis needs, how long its first run takes and whether to turn it on is in
+[SOUND.md](SOUND.md).
 
 ## 7. Choose the players that count
 
