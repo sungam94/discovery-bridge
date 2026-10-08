@@ -66,6 +66,15 @@ yaml_set() {  # yaml_set KEY VALUE: replaces the first "KEY:" or "# KEY:" line o
   mv "$tmp" "$CONFIG_FILE"
 }
 
+yaml_comment() {  # yaml_comment KEY: turns a "KEY: value" line of config.yaml into "# KEY: value"
+  local tmp
+  tmp="$(mktemp "$CONFIG_FILE.XXXXXX")"
+  SETUP_KEY="$1" awk 'BEGIN { k = ENVIRON["SETUP_KEY"] ":" } index($0, k) == 1 { print "# " $0; next } { print }' \
+    "$CONFIG_FILE" > "$tmp"
+  chmod 644 "$tmp"
+  mv "$tmp" "$CONFIG_FILE"
+}
+
 random_hex() {  # 32 random bytes as 64 hex characters
   if command -v openssl >/dev/null 2>&1; then
     openssl rand -hex 32
@@ -390,6 +399,16 @@ setup() {
   yaml_set language "$answer"
   say "  language: $answer"
 
+  ask_yes_no WATCHDOG "Write health.json for a watchdog (Hermes, a cron job; see docs/WATCHDOG.md)?" \
+    "$( [ -n "$(yaml_get health_file)" ] && echo yes || echo no)"
+  watchdog="$answer"
+  if [ "$watchdog" = yes ]; then
+    yaml_set health_file /health/health.json
+  else
+    yaml_comment health_file
+  fi
+  say "  health_file: $( [ "$watchdog" = yes ] && echo /health/health.json || echo off)"
+
   current_players="$(yaml_get players_allowlist)"
   if [ -n "$NONINTERACTIVE" ]; then
     if from_env PLAYERS; then players="$answer"; else players="__keep__"; fi
@@ -418,13 +437,15 @@ setup() {
 
 make_folders() {  # created now, so Docker does not create them owned by root
   local dir
-  for dir in data chrome-profile "$STATE_DIR" "$(env_get BACKUP_COPY_DIR)" "$(env_get HEALTH_DIR)"; do
+  local health=""
+  [ -n "$(yaml_get health_file)" ] && health="$(env_get HEALTH_DIR)"
+  for dir in data chrome-profile "$STATE_DIR" "$(env_get BACKUP_COPY_DIR)" "$health"; do
     [ -n "$dir" ] || continue
     if ! mkdir -p "$dir" 2>/dev/null; then
       say "  Could not create $dir; create it yourself before starting the containers."
     fi
   done
-  say "  Folders ready: data, chrome-profile, $STATE_DIR, $(env_get BACKUP_COPY_DIR), $(env_get HEALTH_DIR)"
+  say "  Folders ready: data, chrome-profile, $STATE_DIR, $(env_get BACKUP_COPY_DIR)${health:+, $health}"
 }
 
 case "${1:-}" in

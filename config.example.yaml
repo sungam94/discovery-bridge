@@ -12,8 +12,9 @@ ma_layout_dir: /ma_layout
 # Second copy of the daily 03:30 backup (compose mounts BACKUP_COPY_DIR from .env here). Remove the line to keep
 # backups only in data_dir/backups.
 backup_copy_target: /backup-copy
-# health.json for a watchdog (compose mounts HEALTH_DIR from .env at /health). Remove the line to not write it.
-health_file: /health/health.json
+# Optional: health.json for a watchdog such as the Hermes example in ops/hermes/ or a cron job (compose mounts
+# HEALTH_DIR from .env at /health). Off unless set; scripts/setup.sh asks. See docs/WATCHDOG.md.
+# health_file: /health/health.json
 
 # --- Language and time --------------------------------------------------------------------------------------
 # en or de: the texts in health.json and the Discover row titles in MA. Problem keys stay the same.

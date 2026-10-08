@@ -71,8 +71,9 @@ The script:
   default is no) and the sound analysis, and sets `COMPOSE_PROFILES` and `FEEDBACK_API_TOKEN` to match;
 - asks for MA's address (`ma_url`; `127.0.0.1` when MA runs on this server), the language (`en` or `de`) and,
   optionally, the MA players whose plays count as your taste (`players_allowlist`, see step 7);
-- creates `data/`, `chrome-profile/`, `backup-copy/`, `health/` and `ma_provider/spotify_bridge/state/` as your
-  user, so Docker does not create them owned by root.
+- asks whether to write `health.json` for a watchdog (default no, see step 9);
+- creates `data/`, `chrome-profile/`, `backup-copy/` and `ma_provider/spotify_bridge/state/` (and `health/` with
+  the watchdog) as your user, so Docker does not create them owned by root.
 
 Every question shows the current value as its default, so you can run the script again at any time to change
 one answer; pressing Enter keeps the rest. Secrets are only shown as "set".
@@ -163,31 +164,14 @@ Keep the quotes: ids that look like MAC addresses would otherwise not be read as
 - Within about an hour, `Spotify · Discover Weekly`, `Spotify · Release Radar` and the Daily Mixes appear in
   MA's library under Playlists. The Discover rows (`Spotify · Made for you` and the others) follow after the
   first poll, once the plugin has read the bridge's layout file.
-- If you use `health.json` (step 9), its `problems` list is empty.
+- If you turned on the watchdog (step 9), the `problems` list in `health.json` is empty.
 
-## 9. Monitoring with health.json
+## 9. Watchdog (optional)
 
-With `health_file: /health/health.json` in `config.yaml` (the default in the example), the bridge writes
-`health.json` into the `HEALTH_DIR` folder every five minutes:
-
-```
-{"version": 1, "written_at": "2026-10-08T09:30:00+00:00", "problems": [{"key": "spotify", "text": "..."}]}
-```
-
-- `written_at` is the time of writing in UTC. A file older than about 30 minutes means the bridge is not
-  running.
-- Each problem has a `key` that is the same in every language (`spotify`, `poll`, `capture`, `backup`,
-  `adapter`, `jobs`, `queue`, `genre_wheel`, `sound`, `disk`) and a `text` in the configured `language`.
-- No secrets go into the file.
-
-Any scheduler can watch it. `ops/hermes/discovery_bridge.py` is an example watchdog that prints only when a
-problem appears or clears, so a plain cron job that mails its output is enough:
-
-```
-*/15 * * * * DISCOVERY_BRIDGE_HEALTH=/path/to/discovery-bridge/health/health.json DISCOVERY_BRIDGE_WATCH_STATE=/path/to/watch-state.json DISCOVERY_BRIDGE_LANG=en python3 /path/to/discovery-bridge/ops/hermes/discovery_bridge.py
-```
-
-Set `DISCOVERY_BRIDGE_LANG=en` for English wording around the problem texts; the script's default is German.
+The bridge can write a `health.json` file with its current problems every five minutes, for a watchdog that
+messages you when something breaks (an expired Spotify cookie, MA unreachable, a failed backup). It is off unless
+you answered yes in `scripts/setup.sh` or set `health_file` in `config.yaml`. [WATCHDOG.md](WATCHDOG.md) explains
+the file and how to watch it with Hermes, cron and mail, a push notification, or your own monitoring.
 
 ## 10. Updating, backups and moving
 

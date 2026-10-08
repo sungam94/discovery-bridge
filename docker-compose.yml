@@ -26,7 +26,7 @@ services:
       - ./ma_provider/spotify_bridge/state:/ma_layout
       # second copy of the daily backup, ideally on another disk (config key backup_copy_target: /backup-copy)
       - ${BACKUP_COPY_DIR:-./backup-copy}:/backup-copy
-      # health.json for a watchdog (config key health_file: /health/health.json); see ops/hermes/ for an example
+      # optional health.json for a watchdog (config key health_file); see docs/WATCHDOG.md
       - ${HEALTH_DIR:-./health}:/health
   spotify-feedback:
     build:

@@ -61,8 +61,9 @@ def test_first_run_writes_every_answer(repo):
     cfg = load_config(repo / "config.yaml", env)
     assert cfg.ma_url == "ws://192.0.2.10:8095/ws" and cfg.language == "de" and cfg.timezone == "Europe/London"
     assert cfg.players_allowlist == frozenset({"02:00:00:00:00:05", "kitchen"})  # strings, not YAML numbers
-    for folder in ("data", "chrome-profile", "backup-copy", "health", "ma_provider/spotify_bridge/state"):
+    for folder in ("data", "chrome-profile", "backup-copy", "ma_provider/spotify_bridge/state"):
         assert (repo / folder).is_dir()
+    assert cfg.health_file is None and not (repo / "health").exists()  # no watchdog unless asked for
 
 
 @pytest.mark.parametrize("answer, expected", [
@@ -79,6 +80,27 @@ def test_ma_address_becomes_a_websocket_address(repo, answer, expected):
     result = run(repo, **{**ANSWERS, "SETUP_MA_URL": answer})
     assert result.returncode == 0, result.stderr
     assert load_config(repo / "config.yaml", read_env(repo)).ma_url == expected
+
+
+def test_watchdog_on_writes_the_health_file_and_its_folder(repo):
+    result = run(repo, **{**ANSWERS, "SETUP_WATCHDOG": "yes"})
+    assert result.returncode == 0, result.stderr
+    cfg = load_config(repo / "config.yaml", read_env(repo))
+    assert cfg.health_file == Path("/health/health.json") and (repo / "health").is_dir()
+
+
+def test_watchdog_off_again_stops_the_health_file(repo):
+    run(repo, **{**ANSWERS, "SETUP_WATCHDOG": "yes"})
+    result = run(repo, **{**ANSWERS, "SETUP_WATCHDOG": "no"})
+    assert result.returncode == 0, result.stderr
+    assert load_config(repo / "config.yaml", read_env(repo)).health_file is None
+    assert "# health_file: /health/health.json" in (repo / "config.yaml").read_text()
+
+
+def test_watchdog_answer_is_kept_on_a_second_run(repo):
+    run(repo, **{**ANSWERS, "SETUP_WATCHDOG": "yes"})
+    run(repo, **ANSWERS)
+    assert load_config(repo / "config.yaml", read_env(repo)).health_file == Path("/health/health.json")
 
 
 def test_no_secret_is_printed(repo):

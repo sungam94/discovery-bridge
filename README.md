@@ -47,8 +47,8 @@ Read this before you install anything.
   Deezer's 30-second previews with the Essentia models. The results appear as a mood line on the covers.
   Needs an x86_64 server; details, numbers and recommendations in [docs/SOUND.md](docs/SOUND.md).
 - **Status page and health file.** A password-protected status page shows the playlists, unmatched tracks
-  (with a way to pin the right TIDAL track) and the feedback queue. A `health.json` file lists current problems
-  for any watchdog.
+  (with a way to pin the right TIDAL track) and the feedback queue. Optionally a `health.json` file lists current
+  problems for a watchdog such as Hermes or a cron job ([docs/WATCHDOG.md](docs/WATCHDOG.md)).
 
 <!-- Screenshots, to be added: docs/images/discover-rows.png, docs/images/covers.png, docs/images/status-page.png -->
 

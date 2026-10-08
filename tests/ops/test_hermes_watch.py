@@ -45,16 +45,16 @@ def test_stale_or_missing_file_is_a_problem():
 
 
 def test_frame_texts_are_german():
-    msg, st = watch.check(health(("disk", "low disk")), NOW, {})
+    msg, st = watch.check(health(("disk", "low disk")), NOW, {}, language="de")
     assert msg == "Discovery Bridge\n⚠ low disk"
     later = NOW + timedelta(hours=25)
-    msg, st = watch.check(health(("disk", "low disk"), at=later), later, st)
+    msg, st = watch.check(health(("disk", "low disk"), at=later), later, st, language="de")
     assert msg == "Discovery Bridge\n⚠ weiterhin: low disk"
-    msg, _ = watch.check(health(at=later), later, st)
+    msg, _ = watch.check(health(at=later), later, st, language="de")
     assert msg == "Discovery Bridge\n✅ wieder ok: low disk"
-    msg, _ = watch.check(None, NOW, {})
+    msg, _ = watch.check(None, NOW, {}, language="de")
     assert msg == "Discovery Bridge\n⚠ health.json fehlt oder ist unlesbar"
-    msg, _ = watch.check(health(age_min=45), NOW, {})
+    msg, _ = watch.check(health(age_min=45), NOW, {}, language="de")
     assert msg.startswith("Discovery Bridge\n⚠ keine Statusmeldung seit ")
 
 
@@ -70,3 +70,11 @@ def test_frame_texts_in_english():
     assert msg == "Discovery Bridge\n⚠ health.json is missing or unreadable"
     msg, _ = watch.check(health(age_min=45), NOW, {}, language="en")
     assert msg.startswith("Discovery Bridge\n⚠ no status update since ")
+
+
+def test_frame_texts_default_to_english(monkeypatch):
+    monkeypatch.delenv("DISCOVERY_BRIDGE_LANG", raising=False)
+    fresh = importlib.util.module_from_spec(_spec)
+    _spec.loader.exec_module(fresh)
+    msg, _ = fresh.check(None, NOW, {})
+    assert msg == "Discovery Bridge\n⚠ health.json is missing or unreadable"

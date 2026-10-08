@@ -35,6 +35,7 @@ def test_config_example_loads_with_the_friend_defaults():
     assert cfg.ma_layout_dir == Path("/ma_layout") and cfg.backup_copy_target == Path("/backup-copy")
     assert cfg.discover_weekly_id is None and cfg.release_radar_id is None
     assert cfg.players_allowlist == frozenset()
+    assert cfg.health_file is None  # the watchdog file is opt-in (scripts/setup.sh asks)
 
 
 def test_config_example_documents_every_key():

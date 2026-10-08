@@ -7,7 +7,7 @@ Reads the health.json that the bridge writes every 5 min (config key health_file
 problem, recovery) and repeats an open problem once a day. Empty stdout = silent.
 
 Environment: DISCOVERY_BRIDGE_HEALTH (path of health.json), DISCOVERY_BRIDGE_WATCH_STATE (where the watcher
-keeps what it already reported), DISCOVERY_BRIDGE_LANG (de, the default, or en: the words around the problem
+keeps what it already reported), DISCOVERY_BRIDGE_LANG (en, the default, or de: the words around the problem
 texts; the problem texts themselves come from health.json in the bridge's language).
 """
 import datetime
@@ -18,7 +18,7 @@ HEALTH = os.environ.get("DISCOVERY_BRIDGE_HEALTH", "/opt/data/extern/discovery-b
 STATE = os.environ.get("DISCOVERY_BRIDGE_WATCH_STATE", "/opt/data/state/discovery-bridge-watch.json")
 STALE_AFTER = datetime.timedelta(minutes=30)
 REMIND_AFTER = datetime.timedelta(hours=24)
-LANG = os.environ.get("DISCOVERY_BRIDGE_LANG", "de")
+LANG = os.environ.get("DISCOVERY_BRIDGE_LANG", "en")
 FRAMES = {
     "de": {"missing": "health.json fehlt oder ist unlesbar", "stale": "keine Statusmeldung seit {since}",
            "still": "weiterhin: ", "recovered": "wieder ok: "},
@@ -33,7 +33,7 @@ def _parse(ts):
 
 def check(health, now, state, language=None):
     """Returns (message, new_state). state maps problem key -> {"text", "since", "told"}."""
-    words = FRAMES.get(language or LANG, FRAMES["de"])
+    words = FRAMES.get(language or LANG, FRAMES["en"])
     current = {}
     if health is None:
         current["bridge"] = words["missing"]
