@@ -61,10 +61,10 @@ can deliver messages to Telegram and other chat apps. Its script jobs can run wi
 installing just for this.
 
 1. Point `HEALTH_DIR` in the bridge's `.env` at a folder inside Hermes' data folder, so Hermes sees the file
-   at `/opt/data/extern/discovery-bridge/`. With Hermes' data folder at `~/.hermes` (mounted at `/opt/data` in
-   its container):
+   at `/opt/data/extern/discovery-bridge/`. Hermes' data folder is usually `~/.hermes`, mounted at `/opt/data`
+   in its container; write it out in full, because Compose does not expand `~`:
    ```
-   HEALTH_DIR=/home/<you>/.hermes/extern/discovery-bridge
+   HEALTH_DIR=/path/to/.hermes/extern/discovery-bridge
    ```
    Then `docker compose up -d --force-recreate`.
 2. Copy the script into Hermes' scripts folder:
