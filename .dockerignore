@@ -1,0 +1,10 @@
+.git
+.venv
+spike
+data
+docs
+tests
+*.env
+.env
+config.yaml
+.superpowers

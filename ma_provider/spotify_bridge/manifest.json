@@ -1,0 +1,13 @@
+{
+  "type": "metadata",
+  "domain": "spotify_bridge",
+  "name": "Spotify Bridge",
+  "description": "Discover rows and covers for the Spotify playlists that the Discovery Bridge mirrors into Music Assistant.",
+  "codeowners": [],
+  "stage": "experimental",
+  "requirements": [],
+  "documentation": null,
+  "multi_instance": false,
+  "builtin": false,
+  "icon": "spotify"
+}

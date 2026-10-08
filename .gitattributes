@@ -1,0 +1,14 @@
+# Left out of `git archive` and therefore of the shared export (scripts/export-share.sh): internal plans,
+# reviews and spike material that name one particular installation. Each folder is named twice: the folder
+# itself keeps git archive from writing it, the /** line marks every file in it for git check-attr.
+docs/reviews export-ignore
+docs/reviews/** export-ignore
+docs/spike export-ignore
+docs/spike/** export-ignore
+docs/superpowers export-ignore
+docs/superpowers/** export-ignore
+docs/sharing export-ignore
+docs/sharing/** export-ignore
+/spike export-ignore
+/spike/** export-ignore
+/idea.txt export-ignore

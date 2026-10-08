@@ -1,0 +1,222 @@
+{
+  "url": "https://api-partner.spotify.com/pathfinder/v2/query",
+  "method": "POST",
+  "status": 200,
+  "operationName": "searchTracks",
+  "sha256Hash": "b02683192a98dde7966b5e6655a79eeb62713eab703eda9902c932818dd52751",
+  "variables": {
+    "includePreReleases": false,
+    "includeAlbumPreReleases": false,
+    "numberOfTopResults": 20,
+    "searchTerm": "isrc:USA3T2600001",
+    "offset": 0,
+    "limit": 20,
+    "includeAudiobooks": true,
+    "includeAuthors": true,
+    "includeEpisodeContentRatingsV2": true
+  },
+  "response": {
+    "data": {
+      "searchV2": {
+        "query": "isrc:USA3T2600001",
+        "tracksV2": {
+          "items": [
+            {
+              "item": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "coverArt": {
+                      "extractedColors": {
+                        "colorDark": {
+                          "hex": "#847555",
+                          "isFallback": false
+                        }
+                      },
+                      "sources": [
+                        {
+                          "height": 300,
+                          "url": "https://i.scdn.co/image/ab67616d00001e0226c2a26f4642a510302956dc",
+                          "width": 300
+                        },
+                        {
+                          "height": 64,
+                          "url": "https://i.scdn.co/image/ab67616d0000485126c2a26f4642a510302956dc",
+                          "width": 64
+                        },
+                        {
+                          "height": 640,
+                          "url": "https://i.scdn.co/image/ab67616d0000b27326c2a26f4642a510302956dc",
+                          "width": 640
+                        }
+                      ]
+                    },
+                    "id": "0FakeAlbum000000000026",
+                    "name": "Slowly Waking Room",
+                    "uri": "spotify:album:0FakeAlbum000000000026",
+                    "visualIdentity": {
+                      "squareCoverImage": {
+                        "__typename": "VisualIdentityImage",
+                        "extractedColorSet": {
+                          "encoreBaseSetTextColor": {
+                            "alpha": 255,
+                            "blue": 136,
+                            "green": 184,
+                            "red": 208
+                          },
+                          "highContrast": {
+                            "backgroundBase": {
+                              "alpha": 255,
+                              "blue": 34,
+                              "green": 80,
+                              "red": 101
+                            },
+                            "backgroundTintedBase": {
+                              "alpha": 255,
+                              "blue": 0,
+                              "green": 47,
+                              "red": 67
+                            },
+                            "textBase": {
+                              "alpha": 255,
+                              "blue": 255,
+                              "green": 255,
+                              "red": 255
+                            },
+                            "textBrightAccent": {
+                              "alpha": 255,
+                              "blue": 255,
+                              "green": 255,
+                              "red": 255
+                            },
+                            "textSubdued": {
+                              "alpha": 255,
+                              "blue": 154,
+                              "green": 203,
+                              "red": 227
+                            }
+                          },
+                          "higherContrast": {
+                            "backgroundBase": {
+                              "alpha": 255,
+                              "blue": 0,
+                              "green": 49,
+                              "red": 70
+                            },
+                            "backgroundTintedBase": {
+                              "alpha": 255,
+                              "blue": 39,
+                              "green": 83,
+                              "red": 104
+                            },
+                            "textBase": {
+                              "alpha": 255,
+                              "blue": 255,
+                              "green": 255,
+                              "red": 255
+                            },
+                            "textBrightAccent": {
+                              "alpha": 255,
+                              "blue": 96,
+                              "green": 215,
+                              "red": 30
+                            },
+                            "textSubdued": {
+                              "alpha": 255,
+                              "blue": 154,
+                              "green": 203,
+                              "red": 227
+                            }
+                          },
+                          "minContrast": {
+                            "backgroundBase": {
+                              "alpha": 255,
+                              "blue": 103,
+                              "green": 150,
+                              "red": 173
+                            },
+                            "backgroundTintedBase": {
+                              "alpha": 255,
+                              "blue": 79,
+                              "green": 125,
+                              "red": 148
+                            },
+                            "textBase": {
+                              "alpha": 255,
+                              "blue": 255,
+                              "green": 255,
+                              "red": 255
+                            },
+                            "textBrightAccent": {
+                              "alpha": 255,
+                              "blue": 255,
+                              "green": 255,
+                              "red": 255
+                            },
+                            "textSubdued": {
+                              "alpha": 255,
+                              "blue": 255,
+                              "green": 255,
+                              "red": 255
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "onPlatformReputationTrait": {
+                          "verification": {
+                            "aiPersona": null
+                          }
+                        },
+                        "profile": {
+                          "name": "Larks"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000026"
+                      }
+                    ]
+                  },
+                  "associationsV3": {
+                    "audioAssociations": {
+                      "totalCount": 0
+                    },
+                    "videoAssociations": {
+                      "totalCount": 0
+                    }
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "duration": {
+                    "totalMilliseconds": 2347938
+                  },
+                  "id": "0FakeTrack000000000026",
+                  "trackMediaType": "AUDIO",
+                  "name": "The Edge of Morning - Live",
+                  "playability": {
+                    "playable": true,
+                    "reason": "PLAYABLE"
+                  },
+                  "uri": "spotify:track:0FakeTrack000000000026",
+                  "visualIdentity": {
+                    "sixteenByNineCoverImage": null
+                  }
+                }
+              },
+              "matchedFields": []
+            }
+          ],
+          "pagingInfo": {
+            "limit": 20,
+            "nextOffset": null
+          },
+          "totalCount": 1
+        }
+      }
+    }
+  }
+}

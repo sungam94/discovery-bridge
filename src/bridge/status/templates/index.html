@@ -1,0 +1,69 @@
+{% extends "base.html" %}{% block body %}
+<h1>Discovery Bridge</h1>
+{% for w in warnings %}<p class="bad">⚠ {{ w }}</p>{% endfor %}
+<form class="inline" method="post" action="/settings/ingestion_paused"><input type="hidden" name="csrf" value="{{ csrf }}">
+Ingestion: <b>{{ "paused" if ingestion_paused else "running" }}</b> <button>{{ "Resume" if ingestion_paused else "Pause" }}</button></form>
+&nbsp;Spotify: <b id="ingestion-state" class="{{ '' if ingestion_state == 'ok' else 'bad' }}">{{ ingestion_state }}</b>
+<form class="inline" method="post" action="/logout"><button>Log out</button></form>
+<h2>Playlists</h2>
+<table><tr><th>Slot</th><th>Name</th><th>State</th><th>Last checked</th><th>Snapshot</th><th>Coverage</th><th>Flags</th></tr>
+{% for p in playlists %}<tr><td>{{ p.slot }}</td><td>{{ p.name }}</td>
+<td class="{{ '' if p.last_state in (None, 'ok') else 'bad' }}">{{ p.last_state or "—" }}{% if p.last_error %}: {{ p.last_error }}{% endif %}</td>
+<td>{{ p.last_checked or "—" }}</td><td>{{ p.fetched_at or "—" }}</td><td>{{ p.coverage_matched or 0 }}/{{ p.coverage_total or 0 }}</td>
+<td>{% if p.stale %}stale {% endif %}{% if p.guard_count %}guard {{ p.guard_count }} {% endif %}{% if p.empty_count %}<span class="bad">empty {{ p.empty_count }}</span>{% endif %}</td></tr>{% endfor %}
+</table>
+{% if unslotted %}<p class="bad">Unslotted Daily Mixes: {% for u in unslotted %}{{ u.spotify_id }} {% endfor %}</p>{% endif %}
+<h2>Override any track</h2>
+<p>Use this for a wrong match too: paste the Spotify track ID (from the share link) and the TIDAL URI to pin, or block.</p>
+<form method="post" action="/overrides"><input type="hidden" name="csrf" value="{{ csrf }}">
+<input name="spotify_id" placeholder="Spotify track ID" size="24" required>
+<input name="ma_provider_uri" placeholder="tidal--…://track/…" size="32">
+<label><input type="checkbox" name="block" value="1"> block</label> <button>Save</button></form>
+<h2>Unmatched tracks</h2>
+<table><tr><th>Track</th><th>Reason</th><th>Next retry</th><th>Override</th></tr>
+{% for u in unmatched %}<tr><td>{{ u.artist }} — {{ u.title }}</td><td>{{ u.unmatched_reason }}</td><td>{{ u.unmatched_retry_at }}</td>
+<td><form class="inline" method="post" action="/overrides"><input type="hidden" name="csrf" value="{{ csrf }}">
+<input type="hidden" name="spotify_id" value="{{ u.spotify_id }}"><input name="ma_provider_uri" placeholder="tidal--…://track/…" size="30">
+<button>Pin</button></form>
+<form class="inline" method="post" action="/overrides"><input type="hidden" name="csrf" value="{{ csrf }}">
+<input type="hidden" name="spotify_id" value="{{ u.spotify_id }}"><input type="hidden" name="block" value="1"><button>Block</button></form></td></tr>{% endfor %}
+</table>
+<h2>Feedback to Spotify</h2>
+<form class="inline" method="post" action="/settings/feedback_paused"><input type="hidden" name="csrf" value="{{ csrf }}">
+Feedback: <b class="{{ 'bad' if feedback_paused else '' }}">{{ "paused" if feedback_paused else "on" }}</b>
+<button>{{ "Turn on" if feedback_paused else "Pause" }}</button></form>
+&nbsp;Adapter: <b class="{{ '' if adapter and adapter.state in ('ok', 'busy', 'paused', 'ad') else 'bad' }}">{{ adapter.state if adapter else "unknown" }}</b>
+{% if adapter and adapter.detail %}({{ adapter.detail }}){% endif %}
+&nbsp;Job starts today: <b>{{ cap_used }}/{{ cap }}</b>
+<p>Pending play jobs by daypart (night, morning, afternoon, evening): {{ by_part|join(", ") }}</p>
+{% if jobs_today %}<table><tr><th>Status (jobs created today)</th><th>Jobs</th></tr>
+{% for j in jobs_today %}<tr><td>{{ j.status }}</td><td>{{ j.n }}</td></tr>{% endfor %}</table>{% endif %}
+{% if bad_jobs %}<table><tr><th>Job</th><th>Kind</th><th>Spotify ID</th><th>Status</th><th>Reason</th><th>Finished</th></tr>
+{% for j in bad_jobs %}<tr><td>{{ j.id }}</td><td>{{ j.kind }}</td><td>{{ j.spotify_id }}</td><td class="bad">{{ j.status }}</td><td>{{ j.why }}</td><td>{{ j.finished_at or "" }}</td></tr>{% endfor %}</table>{% endif %}
+<h2>Taste events today</h2>
+{% if taste %}<table><tr><th>Policy result</th><th>Events</th></tr>
+{% for t in taste %}<tr><td>{{ t.policy_result }}</td><td>{{ t.n }}</td></tr>{% endfor %}
+</table>{% else %}<p>No taste events today.</p>{% endif %}
+{% if unknown_players %}<p class="bad">Unknown players (add to players_allowlist if they are yours): {{ unknown_players|join(", ") }}</p>{% endif %}
+<h2>Discover Weekly metric</h2>
+<table><tr><th>Week from</th><th>Matched</th><th>Played</th><th>Completed</th><th>Favorited</th><th>Feedback days</th></tr>
+{% for w in weekly %}<tr><td>{{ w.window_start[:10] }}</td><td>{{ w.matched }}</td>
+{% if w.matched %}<td>{{ (100 * w.played / w.matched)|round|int }} %</td><td>{{ (100 * w.completed / w.matched)|round|int }} %</td><td>{{ (100 * w.favorited / w.matched)|round|int }} %</td>
+{% else %}<td colspan="3">no coverage</td>{% endif %}
+<td>{{ w.feedback_days if w.feedback_days is not none else "—" }}</td></tr>{% endfor %}
+</table>
+<h2>Unresolved plays</h2>
+<p>Plays of tracks the bridge could not find on Spotify. Pin a Spotify track ID or block the item.</p>
+<table><tr><th>Item</th><th>Reason</th><th>Next retry</th><th>Override</th></tr>
+{% for u in unresolved %}<tr><td>{{ u.ma_provider_uri }}</td><td>{{ u.unmatched_reason }}</td><td>{{ u.unmatched_retry_at }}</td>
+<td><form class="inline" method="post" action="/overrides/reverse"><input type="hidden" name="csrf" value="{{ csrf }}">
+<input type="hidden" name="ma_provider_uri" value="{{ u.ma_provider_uri }}"><input name="spotify_id" placeholder="Spotify track ID" size="24">
+<button>Pin</button></form>
+<form class="inline" method="post" action="/overrides/reverse"><input type="hidden" name="csrf" value="{{ csrf }}">
+<input type="hidden" name="ma_provider_uri" value="{{ u.ma_provider_uri }}"><input type="hidden" name="block" value="1"><button>Block</button></form></td></tr>{% endfor %}
+</table>
+<h2>Recent state changes</h2>
+<table><tr><th>Time</th><th>Slot</th><th>State</th><th>Detail</th></tr>
+{% for h in health %}<tr><td>{{ h.ts }}</td><td>{{ h.slot or "*" }}</td><td class="{{ '' if h.state == 'ok' else 'bad' }}">{{ h.state }}</td><td>{{ h.detail }}</td></tr>{% endfor %}
+</table>
+{% endblock %}

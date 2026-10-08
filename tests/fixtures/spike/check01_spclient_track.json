@@ -1,0 +1,98 @@
+{
+  "gid": "15d0f19d9b83a5237def0700459fc001",
+  "name": "A Low Tide",
+  "album": {
+    "gid": "15d0f1921df0ae77cb3a562972f5e001",
+    "name": "A Low Tide",
+    "artist": [
+      {
+        "gid": "15d0f1922d8f878ebe871cd7dc975801",
+        "name": "Mire Of Dusk"
+      }
+    ],
+    "type": "SINGLE",
+    "label": "SIVIANA, RED CRK AB",
+    "date": {
+      "year": 2026,
+      "month": 8,
+      "day": 19
+    },
+    "cover_group": {
+      "image": [
+        {
+          "file_id": "ab67616d00001e02def79c1019be2dfa5075767e",
+          "size": "DEFAULT",
+          "width": 300,
+          "height": 300
+        },
+        {
+          "file_id": "ab67616d00004851def79c1019be2dfa5075767e",
+          "size": "SMALL",
+          "width": 64,
+          "height": 64
+        },
+        {
+          "file_id": "ab67616d0000b273def79c1019be2dfa5075767e",
+          "size": "LARGE",
+          "width": 640,
+          "height": 640
+        }
+      ]
+    },
+    "licensor": {
+      "uuid": "10411b5d2911084cb54b380158692daa"
+    }
+  },
+  "artist": [
+    {
+      "gid": "15d0f1922d8f878ebe871cd7dc975801",
+      "name": "Mire Of Dusk"
+    }
+  ],
+  "number": 1,
+  "disc_number": 1,
+  "duration": 357122,
+  "popularity": 43,
+  "external_id": [
+    {
+      "type": "isrc",
+      "id": "QZFAK2600001"
+    }
+  ],
+  "earliest_live_timestamp": 1787050800,
+  "licensor": {
+    "uuid": "10411b5d2911084cb54b380158692daa"
+  },
+  "language_of_performance": [
+    "en"
+  ],
+  "original_audio": {
+    "uuid": "d13b88455c62ec280ee576016363970f",
+    "format": "AUDIO_FORMAT_STEREO"
+  },
+  "original_title": "A Low Tide",
+  "artist_with_role": [
+    {
+      "artist_gid": "15d0f1922d8f878ebe871cd7dc975801",
+      "artist_name": "Mire Of Dusk",
+      "role": "ARTIST_ROLE_MAIN_ARTIST"
+    }
+  ],
+  "canonical_uri": "spotify:track:0FakeTrack000000000001",
+  "content_authorization_attributes": "<redacted>",
+  "audio_formats": [
+    {
+      "original_audio": {
+        "uuid": "d13b88455c62ec280ee576016363970f",
+        "format": "AUDIO_FORMAT_STEREO"
+      }
+    }
+  ],
+  "media_type": "AUDIO",
+  "implementation_details": {
+    "catalog_insertion_date": {
+      "seconds": 1784551849,
+      "nanos": 689000000
+    }
+  }
+}

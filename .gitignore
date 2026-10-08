@@ -1,0 +1,22 @@
+.env
+*.env
+!*.env.example
+spike/out/
+data/
+chrome-profile/
+__pycache__/
+.venv/
+.pytest_cache/
+config.yaml
+
+# Written by the bridge at runtime (Discover row layout for the MA provider)
+ma_provider/spotify_bridge/state/
+.DS_Store
+
+# Local tools and per-machine files
+.claude/
+.superpowers/
+docker-compose.override.yml
+# Host folders compose creates next to the repository (BACKUP_COPY_DIR and HEALTH_DIR defaults)
+backup-copy/
+health/

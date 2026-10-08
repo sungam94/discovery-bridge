@@ -1,0 +1,15 @@
+# Sound analysis container (see analysis/Dockerfile). essentia-tensorflow brings TensorFlow; CPU only, x86_64.
+# Every version is pinned, the dependencies too, so a rebuild installs the same thing. 2.1b6.dev1389 is the last
+# essentia-tensorflow with a Python 3.11 wheel for Linux x86_64; the models ran with these versions on macOS arm64,
+# the Linux image itself is checked by the smoke step at build time.
+essentia-tensorflow==2.1b6.dev1389
+numpy==2.4.6
+pyyaml==6.0.3
+six==1.17.0
+httpx==0.28.1
+httpcore==1.0.9
+h11==0.16.0
+anyio==4.15.1
+idna==3.20
+certifi==2026.7.22
+typing-extensions==4.16.0

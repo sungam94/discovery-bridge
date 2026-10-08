@@ -1,0 +1,1392 @@
+{
+  "url": "https://api-partner.spotify.com/pathfinder/v2/query",
+  "method": "POST",
+  "status": 200,
+  "operationName": "fetchPlaylist",
+  "sha256Hash": "8964e8eafb21aa992a7d951d256d83285c04be2105d209262901de70cb97584a",
+  "variables": {
+    "uri": "spotify:playlist:37i9dQZEVXcFakeDw00001",
+    "offset": 0,
+    "limit": 25,
+    "enableWatchFeedEntrypoint": true,
+    "includeEpisodeContentRatingsV2": true
+  },
+  "response": {
+    "data": {
+      "playlistV2": {
+        "__typename": "Playlist",
+        "content": {
+          "__typename": "PlaylistItemsPage",
+          "items": [
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Mire Of Dusk"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000001"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "A Low Tide",
+                    "uri": "spotify:album:0FakeAlbum000000000001"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Mire Of Dusk"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000001"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 357122
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "A Low Tide",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000001"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Glass Rivers"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000002"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Every Light Has A Shadow In The Field Of Rain",
+                    "uri": "spotify:album:0FakeAlbum000000000002"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Glass Rivers"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000002"
+                      },
+                      {
+                        "profile": {
+                          "name": "Copper & Thunder"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000027"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 149440
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Ålen feat. Copper & Thunder",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000002"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 3"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000003"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 3",
+                    "uri": "spotify:album:0FakeAlbum000000000003"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 3"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000003"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 183000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 3",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000003"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 4"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000004"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 4",
+                    "uri": "spotify:album:0FakeAlbum000000000004"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 4"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000004"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 184000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 4",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000004"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 5"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000005"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 5",
+                    "uri": "spotify:album:0FakeAlbum000000000005"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 5"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000005"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 185000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 5",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000005"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 6"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000006"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 6",
+                    "uri": "spotify:album:0FakeAlbum000000000006"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 6"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000006"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 186000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 6",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000006"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 7"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000007"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 7",
+                    "uri": "spotify:album:0FakeAlbum000000000007"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 7"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000007"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 187000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 7",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000007"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 8"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000008"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 8",
+                    "uri": "spotify:album:0FakeAlbum000000000008"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 8"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000008"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 188000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 8",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000008"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 9"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000009"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 9",
+                    "uri": "spotify:album:0FakeAlbum000000000009"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 9"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000009"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 189000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 9",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000009"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 10"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000010"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 10",
+                    "uri": "spotify:album:0FakeAlbum000000000010"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 10"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000010"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 190000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 10",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000010"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 11"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000011"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 11",
+                    "uri": "spotify:album:0FakeAlbum000000000011"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 11"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000011"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 191000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 11",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000011"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 12"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000012"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 12",
+                    "uri": "spotify:album:0FakeAlbum000000000012"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 12"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000012"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 192000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 12",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000012"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 13"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000013"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 13",
+                    "uri": "spotify:album:0FakeAlbum000000000013"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 13"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000013"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 193000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 13",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000013"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 14"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000014"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 14",
+                    "uri": "spotify:album:0FakeAlbum000000000014"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 14"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000014"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 194000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 14",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000014"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 15"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000015"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 15",
+                    "uri": "spotify:album:0FakeAlbum000000000015"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 15"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000015"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 195000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 15",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000015"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 16"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000016"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 16",
+                    "uri": "spotify:album:0FakeAlbum000000000016"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 16"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000016"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 196000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 16",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000016"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 17"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000017"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 17",
+                    "uri": "spotify:album:0FakeAlbum000000000017"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 17"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000017"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 197000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 17",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000017"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 18"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000018"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 18",
+                    "uri": "spotify:album:0FakeAlbum000000000018"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 18"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000018"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 198000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 18",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000018"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 19"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000019"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 19",
+                    "uri": "spotify:album:0FakeAlbum000000000019"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 19"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000019"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 199000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 19",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000019"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 20"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000020"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 20",
+                    "uri": "spotify:album:0FakeAlbum000000000020"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 20"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000020"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 200000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 20",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000020"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 21"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000021"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 21",
+                    "uri": "spotify:album:0FakeAlbum000000000021"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 21"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000021"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 201000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 21",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000021"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 22"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000022"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 22",
+                    "uri": "spotify:album:0FakeAlbum000000000022"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 22"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000022"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 202000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 22",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000022"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 23"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000023"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 23",
+                    "uri": "spotify:album:0FakeAlbum000000000023"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 23"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000023"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 203000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 23",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000023"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 24"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000024"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 24",
+                    "uri": "spotify:album:0FakeAlbum000000000024"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 24"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000024"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 204000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 24",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000024"
+                }
+              }
+            },
+            {
+              "addedAt": {
+                "isoString": "2026-09-27T22:00:00Z"
+              },
+              "addedBy": null,
+              "attributes": [],
+              "itemV2": {
+                "__typename": "TrackResponseWrapper",
+                "data": {
+                  "__typename": "Track",
+                  "albumOfTrack": {
+                    "artists": {
+                      "items": [
+                        {
+                          "profile": {
+                            "name": "Artist 25"
+                          },
+                          "uri": "spotify:artist:0FakeArtist00000000025"
+                        }
+                      ]
+                    },
+                    "coverArt": {
+                      "sources": []
+                    },
+                    "name": "Album 25",
+                    "uri": "spotify:album:0FakeAlbum000000000025"
+                  },
+                  "artists": {
+                    "items": [
+                      {
+                        "profile": {
+                          "name": "Artist 25"
+                        },
+                        "uri": "spotify:artist:0FakeArtist00000000025"
+                      }
+                    ]
+                  },
+                  "contentRating": {
+                    "label": "NONE"
+                  },
+                  "discNumber": 1,
+                  "trackDuration": {
+                    "totalMilliseconds": 205000
+                  },
+                  "mediaType": "AUDIO",
+                  "name": "Track 25",
+                  "playability": {
+                    "playable": true
+                  },
+                  "trackNumber": 1,
+                  "uri": "spotify:track:0FakeTrack000000000025"
+                }
+              }
+            }
+          ],
+          "pagingInfo": {
+            "limit": 25,
+            "offset": 0
+          },
+          "totalCount": 30
+        },
+        "description": "Your weekly mixtape of fresh music.",
+        "format": "discover-weekly",
+        "name": "Discover Weekly",
+        "revisionId": "AAAAAFakeRevision0000000000000000",
+        "uri": "spotify:playlist:37i9dQZEVXcFakeDw00001"
+      }
+    }
+  }
+}

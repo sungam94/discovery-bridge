@@ -1,0 +1,1867 @@
+{
+  "artists": [],
+  "albums": [],
+  "genres": [],
+  "tracks": [
+    {
+      "item_id": "900026000",
+      "provider": "tidal--test0001",
+      "name": "A Low Tide",
+      "version": "",
+      "sort_name": "low tide, a",
+      "uri": "tidal--test0001://track/900026000",
+      "external_ids": [
+        [
+          "isrc",
+          "QZFAK2600001"
+        ]
+      ],
+      "is_playable": true,
+      "media_type": "track",
+      "provider_mappings": [
+        {
+          "item_id": "900026000",
+          "provider_domain": "tidal",
+          "provider_instance": "tidal--test0001",
+          "available": true,
+          "in_library": null,
+          "is_unique": null,
+          "audio_format": {
+            "content_type": "flac",
+            "codec_type": "?",
+            "sample_rate": 44100,
+            "bit_depth": 24,
+            "channels": 2,
+            "output_format_str": "flac",
+            "bit_rate": 0
+          },
+          "url": "https://tidal.com/track/900026000",
+          "details": null
+        }
+      ],
+      "metadata": {
+        "description": null,
+        "description_language": null,
+        "life_span": null,
+        "artist_entity_type": null,
+        "review": null,
+        "explicit": false,
+        "images": [
+          {
+            "type": "thumb",
+            "path": "https://resources.tidal.com/images/f9705133/2276/2524/741e/05d15b10f802/750x750.jpg",
+            "provider": "tidal--test0001",
+            "remotely_accessible": true,
+            "proxy_id": "cdf45887f97c00e54ef5ebf4a3f30b01d405d755be8971c309d02707b0de32cd"
+          }
+        ],
+        "grouping": null,
+        "genres": null,
+        "mood": null,
+        "style": null,
+        "copyright": "(P) 2026 SIVIANA, RED CRK AB",
+        "lyrics": null,
+        "lrc_lyrics": null,
+        "transcript": null,
+        "transcript_cues": null,
+        "has_transcript": null,
+        "label": null,
+        "links": null,
+        "performers": null,
+        "preview": null,
+        "popularity": 48,
+        "release_date": null,
+        "languages": null,
+        "chapters": null,
+        "collections": null,
+        "last_refresh": null
+      },
+      "favorite": false,
+      "position": null,
+      "date_added": null,
+      "duration": 357,
+      "artists": [
+        {
+          "item_id": "900004000",
+          "provider": "tidal--test0001",
+          "name": "Mire of Dusk",
+          "version": "",
+          "sort_name": "mire of dusk",
+          "uri": "tidal--test0001://artist/900004000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900004000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900004000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 65,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        }
+      ],
+      "last_played": 0,
+      "album": {
+        "item_id": "900025000",
+        "provider": "tidal--test0001",
+        "name": "A Low Tide",
+        "version": "",
+        "sort_name": "low tide, a",
+        "uri": "tidal--test0001://album/900025000",
+        "external_ids": [],
+        "is_playable": true,
+        "media_type": "album",
+        "available": true,
+        "image": null,
+        "year": null
+      },
+      "disc_number": 0,
+      "track_number": 0,
+      "audio_metadata": {
+        "bpm": 120.0,
+        "musical_key": "G minor"
+      }
+    },
+    {
+      "item_id": "900008000",
+      "provider": "tidal--test0001",
+      "name": "Roots (Back To A Way Of Life)",
+      "version": "",
+      "sort_name": "roots (back to a way of life)",
+      "uri": "tidal--test0001://track/900008000",
+      "external_ids": [
+        [
+          "isrc",
+          "QZFAK2600003"
+        ]
+      ],
+      "is_playable": true,
+      "media_type": "track",
+      "provider_mappings": [
+        {
+          "item_id": "900008000",
+          "provider_domain": "tidal",
+          "provider_instance": "tidal--test0001",
+          "available": true,
+          "in_library": null,
+          "is_unique": null,
+          "audio_format": {
+            "content_type": "flac",
+            "codec_type": "?",
+            "sample_rate": 44100,
+            "bit_depth": 16,
+            "channels": 2,
+            "output_format_str": "flac",
+            "bit_rate": 0
+          },
+          "url": "https://tidal.com/track/900008000",
+          "details": null
+        }
+      ],
+      "metadata": {
+        "description": null,
+        "description_language": null,
+        "life_span": null,
+        "artist_entity_type": null,
+        "review": null,
+        "explicit": false,
+        "images": [
+          {
+            "type": "thumb",
+            "path": "https://resources.tidal.com/images/8e6eca96/cb74/4ae5/27d9/eda468e82eef/750x750.jpg",
+            "provider": "tidal--test0001",
+            "remotely_accessible": true,
+            "proxy_id": "fb76bc1a296b6ddd87163421ea732c6154b1b1d5071cadd9ee4c17c77b8cfa28"
+          }
+        ],
+        "grouping": null,
+        "genres": null,
+        "mood": null,
+        "style": null,
+        "copyright": "℗ 1995 Mercury Records Limited",
+        "lyrics": null,
+        "lrc_lyrics": null,
+        "transcript": null,
+        "transcript_cues": null,
+        "has_transcript": null,
+        "label": null,
+        "links": null,
+        "performers": null,
+        "preview": null,
+        "popularity": 44,
+        "release_date": null,
+        "languages": null,
+        "chapters": null,
+        "collections": null,
+        "last_refresh": null
+      },
+      "favorite": false,
+      "position": null,
+      "date_added": null,
+      "duration": 342,
+      "artists": [
+        {
+          "item_id": "900001000",
+          "provider": "tidal--test0001",
+          "name": "Incognito",
+          "version": "",
+          "sort_name": "incognito",
+          "uri": "tidal--test0001://artist/900001000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900001000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900001000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 66,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        }
+      ],
+      "last_played": 0,
+      "album": {
+        "item_id": "900007000",
+        "provider": "tidal--test0001",
+        "name": "Acid Jazz (Jazz Club)",
+        "version": "",
+        "sort_name": "acid jazz (jazz club)",
+        "uri": "tidal--test0001://album/900007000",
+        "external_ids": [],
+        "is_playable": true,
+        "media_type": "album",
+        "available": true,
+        "image": null,
+        "year": null
+      },
+      "disc_number": 0,
+      "track_number": 0,
+      "audio_metadata": {
+        "bpm": 103.0,
+        "musical_key": "G major"
+      }
+    },
+    {
+      "item_id": "900024000",
+      "provider": "tidal--test0001",
+      "name": "A Quieter Hall",
+      "version": "",
+      "sort_name": "quieter hall, a",
+      "uri": "tidal--test0001://track/900024000",
+      "external_ids": [
+        [
+          "isrc",
+          "QZFAK2600004"
+        ]
+      ],
+      "is_playable": true,
+      "media_type": "track",
+      "provider_mappings": [
+        {
+          "item_id": "900024000",
+          "provider_domain": "tidal",
+          "provider_instance": "tidal--test0001",
+          "available": true,
+          "in_library": null,
+          "is_unique": null,
+          "audio_format": {
+            "content_type": "flac",
+            "codec_type": "?",
+            "sample_rate": 44100,
+            "bit_depth": 16,
+            "channels": 2,
+            "output_format_str": "flac",
+            "bit_rate": 0
+          },
+          "url": "https://tidal.com/track/900024000",
+          "details": null
+        }
+      ],
+      "metadata": {
+        "description": null,
+        "description_language": null,
+        "life_span": null,
+        "artist_entity_type": null,
+        "review": null,
+        "explicit": false,
+        "images": [
+          {
+            "type": "thumb",
+            "path": "https://resources.tidal.com/images/1e2daa2c/ae8e/f662/895e/f22fbdb8a939/750x750.jpg",
+            "provider": "tidal--test0001",
+            "remotely_accessible": true,
+            "proxy_id": "c4d7675bc434a8fe3a1ab9a873d5ad0ebdb2a58cae7cd80a16aa41e9d915df4c"
+          }
+        ],
+        "grouping": null,
+        "genres": null,
+        "mood": null,
+        "style": null,
+        "copyright": "© 2016 Indie Recordings",
+        "lyrics": null,
+        "lrc_lyrics": null,
+        "transcript": null,
+        "transcript_cues": null,
+        "has_transcript": null,
+        "label": null,
+        "links": null,
+        "performers": null,
+        "preview": null,
+        "popularity": 52,
+        "release_date": null,
+        "languages": null,
+        "chapters": null,
+        "collections": null,
+        "last_refresh": null
+      },
+      "favorite": false,
+      "position": null,
+      "date_added": null,
+      "duration": 499,
+      "artists": [
+        {
+          "item_id": "900004000",
+          "provider": "tidal--test0001",
+          "name": "Mire of Dusk",
+          "version": "",
+          "sort_name": "mire of dusk",
+          "uri": "tidal--test0001://artist/900004000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900004000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900004000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 65,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        },
+        {
+          "item_id": "900009000",
+          "provider": "tidal--test0001",
+          "name": "Jane Winterly",
+          "version": "",
+          "sort_name": "jane winterly",
+          "uri": "tidal--test0001://artist/900009000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900009000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900009000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 56,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        }
+      ],
+      "last_played": 0,
+      "album": {
+        "item_id": "900023000",
+        "provider": "tidal--test0001",
+        "name": "Seafarer",
+        "version": "",
+        "sort_name": "seafarer",
+        "uri": "tidal--test0001://album/900023000",
+        "external_ids": [],
+        "is_playable": true,
+        "media_type": "album",
+        "available": true,
+        "image": null,
+        "year": null
+      },
+      "disc_number": 0,
+      "track_number": 0,
+      "audio_metadata": {
+        "bpm": 124.0,
+        "musical_key": "Ab minor"
+      }
+    },
+    {
+      "item_id": "900020000",
+      "provider": "tidal--test0001",
+      "name": "One Way Out of a Hole",
+      "version": "",
+      "sort_name": "one way out of a hole",
+      "uri": "tidal--test0001://track/900020000",
+      "external_ids": [
+        [
+          "isrc",
+          "QZFAK2600005"
+        ]
+      ],
+      "is_playable": true,
+      "media_type": "track",
+      "provider_mappings": [
+        {
+          "item_id": "900020000",
+          "provider_domain": "tidal",
+          "provider_instance": "tidal--test0001",
+          "available": true,
+          "in_library": null,
+          "is_unique": null,
+          "audio_format": {
+            "content_type": "flac",
+            "codec_type": "?",
+            "sample_rate": 44100,
+            "bit_depth": 16,
+            "channels": 2,
+            "output_format_str": "flac",
+            "bit_rate": 0
+          },
+          "url": "https://tidal.com/track/900020000",
+          "details": null
+        }
+      ],
+      "metadata": {
+        "description": null,
+        "description_language": null,
+        "life_span": null,
+        "artist_entity_type": null,
+        "review": null,
+        "explicit": false,
+        "images": [
+          {
+            "type": "thumb",
+            "path": "https://resources.tidal.com/images/9484e12e/7114/b920/1a33/124e052aeda9/750x750.jpg",
+            "provider": "tidal--test0001",
+            "remotely_accessible": true,
+            "proxy_id": "f1c6c5668878189830bfcfdb5a78a6fa068995c814b250285340863882770038"
+          }
+        ],
+        "grouping": null,
+        "genres": null,
+        "mood": null,
+        "style": null,
+        "copyright": "Earthology Records",
+        "lyrics": null,
+        "lrc_lyrics": null,
+        "transcript": null,
+        "transcript_cues": null,
+        "has_transcript": null,
+        "label": null,
+        "links": null,
+        "performers": null,
+        "preview": null,
+        "popularity": 22,
+        "release_date": null,
+        "languages": null,
+        "chapters": null,
+        "collections": null,
+        "last_refresh": null
+      },
+      "favorite": false,
+      "position": null,
+      "date_added": null,
+      "duration": 302,
+      "artists": [
+        {
+          "item_id": "900002000",
+          "provider": "tidal--test0001",
+          "name": "Cloud Cult",
+          "version": "",
+          "sort_name": "cloud cult",
+          "uri": "tidal--test0001://artist/900002000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900002000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900002000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 56,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        }
+      ],
+      "last_played": 0,
+      "album": {
+        "item_id": "900019000",
+        "provider": "tidal--test0001",
+        "name": "One Way Out of a Hole",
+        "version": "",
+        "sort_name": "one way out of a hole",
+        "uri": "tidal--test0001://album/900019000",
+        "external_ids": [],
+        "is_playable": true,
+        "media_type": "album",
+        "available": true,
+        "image": null,
+        "year": null
+      },
+      "disc_number": 0,
+      "track_number": 0,
+      "audio_metadata": {
+        "bpm": 145.0,
+        "musical_key": "E major"
+      }
+    },
+    {
+      "item_id": "900018000",
+      "provider": "tidal--test0001",
+      "name": "An Ember for the Field",
+      "version": "",
+      "sort_name": "ember for the field, an",
+      "uri": "tidal--test0001://track/900018000",
+      "external_ids": [
+        [
+          "isrc",
+          "QZFAK2600010"
+        ]
+      ],
+      "is_playable": true,
+      "media_type": "track",
+      "provider_mappings": [
+        {
+          "item_id": "900018000",
+          "provider_domain": "tidal",
+          "provider_instance": "tidal--test0001",
+          "available": true,
+          "in_library": null,
+          "is_unique": null,
+          "audio_format": {
+            "content_type": "flac",
+            "codec_type": "?",
+            "sample_rate": 44100,
+            "bit_depth": 24,
+            "channels": 2,
+            "output_format_str": "flac",
+            "bit_rate": 0
+          },
+          "url": "https://tidal.com/track/900018000",
+          "details": null
+        }
+      ],
+      "metadata": {
+        "description": null,
+        "description_language": null,
+        "life_span": null,
+        "artist_entity_type": null,
+        "review": null,
+        "explicit": false,
+        "images": [
+          {
+            "type": "thumb",
+            "path": "https://resources.tidal.com/images/16355491/eaa6/9443/3d48/90c7ad6b20a0/750x750.jpg",
+            "provider": "tidal--test0001",
+            "remotely_accessible": true,
+            "proxy_id": "a2841e4794f322cae554f34369d94f0efe6f4588afc8c18ac8153373bcadec3b"
+          }
+        ],
+        "grouping": null,
+        "genres": null,
+        "mood": null,
+        "style": null,
+        "copyright": "(P) 2022 Mire of Dusk Issued Under License to Metal Blade Records, Inc.",
+        "lyrics": null,
+        "lrc_lyrics": null,
+        "transcript": null,
+        "transcript_cues": null,
+        "has_transcript": null,
+        "label": null,
+        "links": null,
+        "performers": null,
+        "preview": null,
+        "popularity": 45,
+        "release_date": null,
+        "languages": null,
+        "chapters": null,
+        "collections": null,
+        "last_refresh": null
+      },
+      "favorite": false,
+      "position": null,
+      "date_added": null,
+      "duration": 764,
+      "artists": [
+        {
+          "item_id": "900004000",
+          "provider": "tidal--test0001",
+          "name": "Mire of Dusk",
+          "version": "",
+          "sort_name": "mire of dusk",
+          "uri": "tidal--test0001://artist/900004000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900004000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900004000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 65,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        },
+        {
+          "item_id": "900005000",
+          "provider": "tidal--test0001",
+          "name": "Colm Brasswell",
+          "version": "",
+          "sort_name": "colm brasswell",
+          "uri": "tidal--test0001://artist/900005000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900005000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900005000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 67,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        }
+      ],
+      "last_played": 0,
+      "album": {
+        "item_id": "900016000",
+        "provider": "tidal--test0001",
+        "name": "The Wide Plain South",
+        "version": "",
+        "sort_name": "wide plain south, the",
+        "uri": "tidal--test0001://album/900016000",
+        "external_ids": [],
+        "is_playable": true,
+        "media_type": "album",
+        "available": true,
+        "image": null,
+        "year": null
+      },
+      "disc_number": 0,
+      "track_number": 0,
+      "audio_metadata": {
+        "bpm": 120.0,
+        "musical_key": "B major"
+      }
+    },
+    {
+      "item_id": "900015000",
+      "provider": "tidal--test0001",
+      "name": "A Dusk to Keep",
+      "version": "",
+      "sort_name": "dusk to keep, a",
+      "uri": "tidal--test0001://track/900015000",
+      "external_ids": [
+        [
+          "isrc",
+          "QZFAK2600008"
+        ]
+      ],
+      "is_playable": true,
+      "media_type": "track",
+      "provider_mappings": [
+        {
+          "item_id": "900015000",
+          "provider_domain": "tidal",
+          "provider_instance": "tidal--test0001",
+          "available": true,
+          "in_library": null,
+          "is_unique": null,
+          "audio_format": {
+            "content_type": "flac",
+            "codec_type": "?",
+            "sample_rate": 44100,
+            "bit_depth": 24,
+            "channels": 2,
+            "output_format_str": "flac",
+            "bit_rate": 0
+          },
+          "url": "https://tidal.com/track/900015000",
+          "details": null
+        }
+      ],
+      "metadata": {
+        "description": null,
+        "description_language": null,
+        "life_span": null,
+        "artist_entity_type": null,
+        "review": null,
+        "explicit": false,
+        "images": [
+          {
+            "type": "thumb",
+            "path": "https://resources.tidal.com/images/22f20e4e/461d/4359/bced/98b181026545/750x750.jpg",
+            "provider": "tidal--test0001",
+            "remotely_accessible": true,
+            "proxy_id": "6d047d9834a6f0c9cc3133f6b70c4deb7341ccc6f805f9d5e977f21ad5b16ff2"
+          }
+        ],
+        "grouping": null,
+        "genres": null,
+        "mood": null,
+        "style": null,
+        "copyright": "(P) 2019 Metal Blade Records, Inc.",
+        "lyrics": null,
+        "lrc_lyrics": null,
+        "transcript": null,
+        "transcript_cues": null,
+        "has_transcript": null,
+        "label": null,
+        "links": null,
+        "performers": null,
+        "preview": null,
+        "popularity": 41,
+        "release_date": null,
+        "languages": null,
+        "chapters": null,
+        "collections": null,
+        "last_refresh": null
+      },
+      "favorite": false,
+      "position": null,
+      "date_added": null,
+      "duration": 534,
+      "artists": [
+        {
+          "item_id": "900004000",
+          "provider": "tidal--test0001",
+          "name": "Mire of Dusk",
+          "version": "",
+          "sort_name": "mire of dusk",
+          "uri": "tidal--test0001://artist/900004000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900004000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900004000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 65,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        }
+      ],
+      "last_played": 0,
+      "album": {
+        "item_id": "900014000",
+        "provider": "tidal--test0001",
+        "name": "A Dusk to Keep",
+        "version": "",
+        "sort_name": "dusk to keep, a",
+        "uri": "tidal--test0001://album/900014000",
+        "external_ids": [],
+        "is_playable": true,
+        "media_type": "album",
+        "available": true,
+        "image": null,
+        "year": null
+      },
+      "disc_number": 0,
+      "track_number": 0,
+      "audio_metadata": {
+        "bpm": 100.0,
+        "musical_key": "C# minor"
+      }
+    },
+    {
+      "item_id": "900013000",
+      "provider": "tidal--test0001",
+      "name": "I. It's a Long Way To Tipperary, II. Pack Up Your Troubles in Your Old Kit Bag, III. Mademoiselle From Armentiers, IV. Take Me Back To Dear Old Blighty",
+      "version": "",
+      "sort_name": "i. it's a long way to tipperary, ii. pack up your troubles in your old kit bag, iii. mademoiselle from armentiers, iv. take me back to dear old blighty",
+      "uri": "tidal--test0001://track/900013000",
+      "external_ids": [
+        [
+          "isrc",
+          "QZFAK2600007"
+        ]
+      ],
+      "is_playable": true,
+      "media_type": "track",
+      "provider_mappings": [
+        {
+          "item_id": "900013000",
+          "provider_domain": "tidal",
+          "provider_instance": "tidal--test0001",
+          "available": true,
+          "in_library": null,
+          "is_unique": null,
+          "audio_format": {
+            "content_type": "flac",
+            "codec_type": "?",
+            "sample_rate": 44100,
+            "bit_depth": 16,
+            "channels": 2,
+            "output_format_str": "flac",
+            "bit_rate": 0
+          },
+          "url": "https://tidal.com/track/900013000",
+          "details": null
+        }
+      ],
+      "metadata": {
+        "description": null,
+        "description_language": null,
+        "life_span": null,
+        "artist_entity_type": null,
+        "review": null,
+        "explicit": false,
+        "images": [
+          {
+            "type": "thumb",
+            "path": "https://resources.tidal.com/images/4db83f1a/c0e9/9e68/708b/0fe40e18f292/750x750.jpg",
+            "provider": "tidal--test0001",
+            "remotely_accessible": true,
+            "proxy_id": "a7971bfc01aa214aec02b4e4cde729e3687dff826f3604e67abb28dbc7f26f4b"
+          }
+        ],
+        "grouping": null,
+        "genres": null,
+        "mood": null,
+        "style": null,
+        "copyright": "(c) 2008 Bandleader Recordings",
+        "lyrics": null,
+        "lrc_lyrics": null,
+        "transcript": null,
+        "transcript_cues": null,
+        "has_transcript": null,
+        "label": null,
+        "links": null,
+        "performers": null,
+        "preview": null,
+        "popularity": 24,
+        "release_date": null,
+        "languages": null,
+        "chapters": null,
+        "collections": null,
+        "last_refresh": null
+      },
+      "favorite": false,
+      "position": null,
+      "date_added": null,
+      "duration": 266,
+      "artists": [
+        {
+          "item_id": "900006000",
+          "provider": "tidal--test0001",
+          "name": "The Band of the Royal Corps of Signals",
+          "version": "",
+          "sort_name": "band of the royal corps of signals, the",
+          "uri": "tidal--test0001://artist/900006000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900006000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900006000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 18,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        }
+      ],
+      "last_played": 0,
+      "album": {
+        "item_id": "900012000",
+        "provider": "tidal--test0001",
+        "name": "We'll Keep The Home Fires Burning",
+        "version": "",
+        "sort_name": "we'll keep the home fires burning",
+        "uri": "tidal--test0001://album/900012000",
+        "external_ids": [],
+        "is_playable": true,
+        "media_type": "album",
+        "available": true,
+        "image": null,
+        "year": null
+      },
+      "disc_number": 0,
+      "track_number": 0,
+      "audio_metadata": {
+        "bpm": 110.0,
+        "musical_key": "Eb major"
+      }
+    },
+    {
+      "item_id": "900022000",
+      "provider": "tidal--test0001",
+      "name": "Outside of a Room",
+      "version": "",
+      "sort_name": "outside of a room",
+      "uri": "tidal--test0001://track/900022000",
+      "external_ids": [
+        [
+          "isrc",
+          "QZFAK2600006"
+        ]
+      ],
+      "is_playable": true,
+      "media_type": "track",
+      "provider_mappings": [
+        {
+          "item_id": "900022000",
+          "provider_domain": "tidal",
+          "provider_instance": "tidal--test0001",
+          "available": true,
+          "in_library": null,
+          "is_unique": null,
+          "audio_format": {
+            "content_type": "flac",
+            "codec_type": "?",
+            "sample_rate": 44100,
+            "bit_depth": 16,
+            "channels": 2,
+            "output_format_str": "flac",
+            "bit_rate": 0
+          },
+          "url": "https://tidal.com/track/900022000",
+          "details": null
+        }
+      ],
+      "metadata": {
+        "description": null,
+        "description_language": null,
+        "life_span": null,
+        "artist_entity_type": null,
+        "review": null,
+        "explicit": false,
+        "images": [
+          {
+            "type": "thumb",
+            "path": "https://resources.tidal.com/images/77e208f9/55cf/36af/cfc4/e4c04cc38337/750x750.jpg",
+            "provider": "tidal--test0001",
+            "remotely_accessible": true,
+            "proxy_id": "fad847ce184e15a98fc8277f00ab6e33e362587410019524f3be399b1468f68b"
+          }
+        ],
+        "grouping": null,
+        "genres": null,
+        "mood": null,
+        "style": null,
+        "copyright": "(P) 2020 Mire of Dusk",
+        "lyrics": null,
+        "lrc_lyrics": null,
+        "transcript": null,
+        "transcript_cues": null,
+        "has_transcript": null,
+        "label": null,
+        "links": null,
+        "performers": null,
+        "preview": null,
+        "popularity": 35,
+        "release_date": null,
+        "languages": null,
+        "chapters": null,
+        "collections": null,
+        "last_refresh": null
+      },
+      "favorite": false,
+      "position": null,
+      "date_added": null,
+      "duration": 200,
+      "artists": [
+        {
+          "item_id": "900004000",
+          "provider": "tidal--test0001",
+          "name": "Mire of Dusk",
+          "version": "",
+          "sort_name": "mire of dusk",
+          "uri": "tidal--test0001://artist/900004000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900004000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900004000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 65,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        },
+        {
+          "item_id": "900003000",
+          "provider": "tidal--test0001",
+          "name": "Mark Dunmore",
+          "version": "",
+          "sort_name": "mark dunmore",
+          "uri": "tidal--test0001://artist/900003000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900003000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900003000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 69,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        }
+      ],
+      "last_played": 0,
+      "album": {
+        "item_id": "900021000",
+        "provider": "tidal--test0001",
+        "name": "The Silent Shore",
+        "version": "",
+        "sort_name": "silent shore, the",
+        "uri": "tidal--test0001://album/900021000",
+        "external_ids": [],
+        "is_playable": true,
+        "media_type": "album",
+        "available": true,
+        "image": null,
+        "year": null
+      },
+      "disc_number": 0,
+      "track_number": 0,
+      "audio_metadata": {
+        "bpm": 86.0,
+        "musical_key": "F minor"
+      }
+    },
+    {
+      "item_id": "900017000",
+      "provider": "tidal--test0001",
+      "name": "The Copper Ring",
+      "version": "",
+      "sort_name": "copper ring, the",
+      "uri": "tidal--test0001://track/900017000",
+      "external_ids": [
+        [
+          "isrc",
+          "QZFAK2600009"
+        ]
+      ],
+      "is_playable": true,
+      "media_type": "track",
+      "provider_mappings": [
+        {
+          "item_id": "900017000",
+          "provider_domain": "tidal",
+          "provider_instance": "tidal--test0001",
+          "available": true,
+          "in_library": null,
+          "is_unique": null,
+          "audio_format": {
+            "content_type": "flac",
+            "codec_type": "?",
+            "sample_rate": 44100,
+            "bit_depth": 24,
+            "channels": 2,
+            "output_format_str": "flac",
+            "bit_rate": 0
+          },
+          "url": "https://tidal.com/track/900017000",
+          "details": null
+        }
+      ],
+      "metadata": {
+        "description": null,
+        "description_language": null,
+        "life_span": null,
+        "artist_entity_type": null,
+        "review": null,
+        "explicit": false,
+        "images": [
+          {
+            "type": "thumb",
+            "path": "https://resources.tidal.com/images/16355491/eaa6/9443/3d48/90c7ad6b20a0/750x750.jpg",
+            "provider": "tidal--test0001",
+            "remotely_accessible": true,
+            "proxy_id": "a2841e4794f322cae554f34369d94f0efe6f4588afc8c18ac8153373bcadec3b"
+          }
+        ],
+        "grouping": null,
+        "genres": null,
+        "mood": null,
+        "style": null,
+        "copyright": "(P) 2022 Mire of Dusk Issued Under License to Metal Blade Records, Inc.",
+        "lyrics": null,
+        "lrc_lyrics": null,
+        "transcript": null,
+        "transcript_cues": null,
+        "has_transcript": null,
+        "label": null,
+        "links": null,
+        "performers": null,
+        "preview": null,
+        "popularity": 48,
+        "release_date": null,
+        "languages": null,
+        "chapters": null,
+        "collections": null,
+        "last_refresh": null
+      },
+      "favorite": false,
+      "position": null,
+      "date_added": null,
+      "duration": 458,
+      "artists": [
+        {
+          "item_id": "900004000",
+          "provider": "tidal--test0001",
+          "name": "Mire of Dusk",
+          "version": "",
+          "sort_name": "mire of dusk",
+          "uri": "tidal--test0001://artist/900004000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900004000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900004000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 65,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        }
+      ],
+      "last_played": 0,
+      "album": {
+        "item_id": "900016000",
+        "provider": "tidal--test0001",
+        "name": "The Wide Plain South",
+        "version": "",
+        "sort_name": "wide plain south, the",
+        "uri": "tidal--test0001://album/900016000",
+        "external_ids": [],
+        "is_playable": true,
+        "media_type": "album",
+        "available": true,
+        "image": null,
+        "year": null
+      },
+      "disc_number": 0,
+      "track_number": 0,
+      "audio_metadata": {
+        "bpm": 124.0,
+        "musical_key": "Ab minor"
+      }
+    },
+    {
+      "item_id": "900011000",
+      "provider": "tidal--test0001",
+      "name": "Back To Willow Lane",
+      "version": "",
+      "sort_name": "back to willow lane",
+      "uri": "tidal--test0001://track/900011000",
+      "external_ids": [
+        [
+          "isrc",
+          "QZFAK2600002"
+        ]
+      ],
+      "is_playable": true,
+      "media_type": "track",
+      "provider_mappings": [
+        {
+          "item_id": "900011000",
+          "provider_domain": "tidal",
+          "provider_instance": "tidal--test0001",
+          "available": true,
+          "in_library": null,
+          "is_unique": null,
+          "audio_format": {
+            "content_type": "flac",
+            "codec_type": "?",
+            "sample_rate": 44100,
+            "bit_depth": 16,
+            "channels": 2,
+            "output_format_str": "flac",
+            "bit_rate": 0
+          },
+          "url": "https://tidal.com/track/900011000",
+          "details": null
+        }
+      ],
+      "metadata": {
+        "description": null,
+        "description_language": null,
+        "life_span": null,
+        "artist_entity_type": null,
+        "review": null,
+        "explicit": true,
+        "images": [
+          {
+            "type": "thumb",
+            "path": "https://resources.tidal.com/images/21bb52e9/fac9/77d2/3efb/50f5e4906395/750x750.jpg",
+            "provider": "tidal--test0001",
+            "remotely_accessible": true,
+            "proxy_id": "beaf98343d8129f35be02f27901879b583aa8f34342bcd31b63a8144442aae32"
+          }
+        ],
+        "grouping": null,
+        "genres": null,
+        "mood": null,
+        "style": null,
+        "copyright": "2009 Earache Records Ltd",
+        "lyrics": null,
+        "lrc_lyrics": null,
+        "transcript": null,
+        "transcript_cues": null,
+        "has_transcript": null,
+        "label": null,
+        "links": null,
+        "performers": null,
+        "preview": null,
+        "popularity": 41,
+        "release_date": null,
+        "languages": null,
+        "chapters": null,
+        "collections": null,
+        "last_refresh": null
+      },
+      "favorite": false,
+      "position": null,
+      "date_added": null,
+      "duration": 430,
+      "artists": [
+        {
+          "item_id": "900004000",
+          "provider": "tidal--test0001",
+          "name": "Mire of Dusk",
+          "version": "",
+          "sort_name": "mire of dusk",
+          "uri": "tidal--test0001://artist/900004000",
+          "external_ids": [],
+          "is_playable": true,
+          "media_type": "artist",
+          "provider_mappings": [
+            {
+              "item_id": "900004000",
+              "provider_domain": "tidal",
+              "provider_instance": "tidal--test0001",
+              "available": true,
+              "in_library": null,
+              "is_unique": null,
+              "audio_format": {
+                "content_type": "?",
+                "codec_type": "?",
+                "sample_rate": 44100,
+                "bit_depth": 16,
+                "channels": 2,
+                "output_format_str": "?",
+                "bit_rate": 0
+              },
+              "url": "https://tidal.com/artist/900004000",
+              "details": null
+            }
+          ],
+          "metadata": {
+            "description": null,
+            "description_language": null,
+            "life_span": null,
+            "artist_entity_type": null,
+            "review": null,
+            "explicit": null,
+            "images": null,
+            "grouping": null,
+            "genres": null,
+            "mood": null,
+            "style": null,
+            "copyright": null,
+            "lyrics": null,
+            "lrc_lyrics": null,
+            "transcript": null,
+            "transcript_cues": null,
+            "has_transcript": null,
+            "label": null,
+            "links": null,
+            "performers": null,
+            "preview": null,
+            "popularity": 65,
+            "release_date": null,
+            "languages": null,
+            "chapters": null,
+            "collections": null,
+            "last_refresh": null
+          },
+          "favorite": false,
+          "position": null,
+          "date_added": null,
+          "artist_type": "singer"
+        }
+      ],
+      "last_played": 0,
+      "album": {
+        "item_id": "900010000",
+        "provider": "tidal--test0001",
+        "name": "Somewhere Along The Coastline",
+        "version": "",
+        "sort_name": "somewhere along the coastline",
+        "uri": "tidal--test0001://album/900010000",
+        "external_ids": [],
+        "is_playable": true,
+        "media_type": "album",
+        "available": true,
+        "image": null,
+        "year": null
+      },
+      "disc_number": 0,
+      "track_number": 0,
+      "audio_metadata": {
+        "bpm": 108.0,
+        "musical_key": "B major"
+      }
+    }
+  ],
+  "playlists": [],
+  "radio": [],
+  "audiobooks": [],
+  "podcasts": [],
+  "sound_effects": []
+}

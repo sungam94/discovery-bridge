@@ -1,0 +1,82 @@
+# Discovery Bridge settings. Copy to config.yaml (gitignored) and adjust. Secrets do not belong here: they go
+# into .env (see .env.example). Durations are written like 30s, 15m, 1h or 7d.
+
+# --- Connections and folders --------------------------------------------------------------------------------
+# Music Assistant's WebSocket API. The bridge runs with host networking on the MA host, so 127.0.0.1 works.
+ma_url: ws://127.0.0.1:8095/ws
+# Database, backups and the status page certificate, inside the container (compose mounts ./data here).
+data_dir: /data
+# Where the MA plugin's files go (compose mounts ma_provider/spotify_bridge/state here). Without this key the
+# covers, genres, artist pages, played artists and the TIDAL/SoundCloud covers do not run.
+ma_layout_dir: /ma_layout
+# Second copy of the daily 03:30 backup (compose mounts BACKUP_COPY_DIR from .env here). Remove the line to keep
+# backups only in data_dir/backups.
+backup_copy_target: /backup-copy
+# health.json for a watchdog (compose mounts HEALTH_DIR from .env at /health). Remove the line to not write it.
+health_file: /health/health.json
+
+# --- Language and time --------------------------------------------------------------------------------------
+# en or de: the texts in health.json and the Discover row titles in MA. Problem keys stay the same.
+language: en
+# Locale of the Spotify web player the bridge reads (hub and mix names). Default: en-US for en, de-DE for de.
+# spotify_locale: en-US
+# IANA timezone for the 03:30 backup, history playlist dates, the daily job cap and the replay hours.
+# Default: the TZ variable from .env, else UTC.
+# timezone: Europe/London
+
+# --- Status page --------------------------------------------------------------------------------------------
+# https://<server>:8790, self-signed certificate, password STATUS_PASSWORD from .env.
+status_bind: 0.0.0.0                   # 0.0.0.0 = every address; or one address of the server
+status_port: 8790
+# Name in the self-signed certificate. Default: the server's host name.
+# status_hostname: homeserver
+
+# --- Spotify playlists --------------------------------------------------------------------------------------
+poll_interval: 1h                      # how often Spotify is read
+request_delay_s: 0.5                   # pause between requests to Spotify
+# Slots that also get a dated copy whenever their tracks change ("Spotify · DW 2026-09-28").
+publish_history: [discover_weekly, release_radar]
+# Discover Weekly and Release Radar are found in your Spotify hub. Set an ID only if that ever fails; it is the
+# last part of the playlist's link on open.spotify.com.
+# discover_weekly_id: <playlist id>
+# release_radar_id: <playlist id>
+# Sections of Spotify's "Made for you" hub that are mirrored besides Discover Weekly, Release Radar, the daylist
+# and the Daily Mixes. The IDs are the same for every account. Default: the first four below.
+hub_sections:
+  - spotify:section:0JQ5DACFo5h0jxzOyHOsIe   # Just for you (On Repeat, Repeat Rewind, ...)
+  - spotify:section:0JQ5DACFo5h0jxzOyHOsIa   # artist mixes
+  - spotify:section:0JQ5DACFo5h0jxzOyHOsIc   # mood mixes
+  - spotify:section:0JQ5DACFo5h0jxzOyHOsIp   # Blends
+  # - spotify:section:0JQ5DACFo5h0jxzOyHOsI9 # genre mixes
+  # - spotify:section:0JQ5DACFo5h0jxzOyHOsIb # decade mixes
+  # - spotify:section:0JQ5DATaxswzruE2nWp3Lr # niche mixes
+
+# --- Listening in MA (taste events) -------------------------------------------------------------------------
+# MA players whose plays count as taste. Until this list has entries, no plays count. A player's id is the
+# last part of its page address in MA (Settings > Players > open the player).
+players_allowlist: []
+# When a play counts as completed, listened or skipped (shares of the track length and seconds).
+# thresholds: {completed: 0.9, listened: 0.5, listened_min_s: 30, skipped_s: 30}
+
+# --- Feedback to Spotify (needs the feedback profile in .env and FEEDBACK_API_TOKEN) -------------------------
+adapter_url: http://127.0.0.1:8791
+max_jobs_per_day: 50                   # keep it low: see the terms note in the README
+job_attempts: 3
+max_job_age: 48h
+play_bucket_hours: 1                   # a play is replayed in the same hour of the day it happened
+max_play_age: 14d                      # older plays are not replayed
+
+# --- Covers and Discover rows -------------------------------------------------------------------------------
+# Discover rows of other MA providers whose playlists also get the bridge's covers: a row counts when its title
+# starts with one of the strings. {} turns this off; "source_rows: {tidal: [Custom mixes]}" keeps TIDAL only.
+source_rows:
+  tidal: [Custom mixes]
+  soundcloud: [Mixed for, Made for you]
+# Cover look (pixels on a 1500 px cover). Changing a value redraws all covers.
+# cover_style: {bands: 4, font: 250, font_min: 110, darken: 0.62, footer: 120, footer2: 56, grid: 3}
+# Fixed colour (hue 0-360) for a genre label, overriding the colour wheel.
+# genre_hues: {jazz: 40}
+
+# --- Other ---------------------------------------------------------------------------------------------------
+# MusicBrainz and Wikipedia ask for contact details in the User-Agent; set an address to send one.
+# contact_email: you@example.org

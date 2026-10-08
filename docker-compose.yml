@@ -1,0 +1,61 @@
+# Discovery Bridge. Values come from .env in this directory (copy .env.example): secrets, TZ, the two host
+# folders and COMPOSE_PROFILES. A plain `docker compose up -d --build` starts the bridge only; add
+# COMPOSE_PROFILES=feedback,analysis to .env for the feedback adapter and the sound analysis (both x86_64 only).
+#
+# The MA plugin is not a service here. Music Assistant loads it from its own container; add a read-only volume
+# to your MA service that mounts this repository's plugin folder into MA's providers directory, for example:
+#   volumes:
+#     - /path/to/this/repo/ma_provider/spotify_bridge:<MA providers directory>/spotify_bridge:ro
+# The bridge writes the plugin's layout file into ma_provider/spotify_bridge/state (mounted below as /ma_layout).
+services:
+  discovery-bridge:
+    build: .
+    container_name: discovery-bridge
+    network_mode: host
+    restart: unless-stopped
+    init: true          # reaps orphaned Chromium processes; forwards SIGTERM
+    shm_size: "512m"    # Chromium needs more than Docker's 64 MB default
+    mem_limit: 1g
+    env_file: .env
+    environment:
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ./data:/data
+      - ./config.yaml:/app/config.yaml:ro
+      # Discover row layout, read by the MA spotify_bridge provider through its own mount of ma_provider/
+      - ./ma_provider/spotify_bridge/state:/ma_layout
+      # second copy of the daily backup, ideally on another disk (config key backup_copy_target: /backup-copy)
+      - ${BACKUP_COPY_DIR:-./backup-copy}:/backup-copy
+      # health.json for a watchdog (config key health_file: /health/health.json); see ops/hermes/ for an example
+      - ${HEALTH_DIR:-./health}:/health
+  spotify-feedback:
+    build:
+      context: .
+      dockerfile: adapter/Dockerfile
+    container_name: spotify-feedback
+    profiles: [feedback]        # opt-in: plays tracks on your Spotify account (see the terms note in the README)
+    network_mode: host          # API binds 127.0.0.1 only
+    restart: unless-stopped
+    init: true
+    shm_size: "1g"
+    mem_limit: 1536m
+    environment:                # only what the adapter needs; values come from .env in the project directory
+      SPOTIFY_SP_DC: ${SPOTIFY_SP_DC}
+      FEEDBACK_API_TOKEN: ${FEEDBACK_API_TOKEN}
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ./chrome-profile:/profile
+  sound-analysis:
+    build:
+      context: .
+      dockerfile: analysis/Dockerfile
+    container_name: sound-analysis
+    profiles: [analysis]        # opt-in: needs an x86_64 host
+    restart: unless-stopped
+    init: true
+    cpus: 2
+    mem_limit: 2g
+    environment:                # no secrets: Deezer's public API needs no key
+      TZ: ${TZ:-UTC}
+    volumes:
+      - ./data:/data            # reads bridge.sqlite (read-only), writes sound.sqlite

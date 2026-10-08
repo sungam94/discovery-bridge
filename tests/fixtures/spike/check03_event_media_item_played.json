@@ -1,0 +1,83 @@
+[
+  {
+    "event": "media_item_played",
+    "object_id": "tidal--test0001://track/900026000",
+    "data": {
+      "uri": "tidal--test0001://track/900026000",
+      "media_type": "track",
+      "name": "A Low Tide",
+      "duration": 357,
+      "seconds_played": 30,
+      "fully_played": false,
+      "is_playing": true,
+      "mbid": null,
+      "artist": "Mire of Dusk",
+      "artists": [
+        "Mire of Dusk"
+      ],
+      "artist_mbids": [],
+      "album": "A Low Tide",
+      "album_mbid": null,
+      "album_artist": null,
+      "album_artist_mbids": null,
+      "image_url": "https://resources.tidal.com/images/f9705133/2276/2524/741e/05d15b10f802/750x750.jpg",
+      "version": "",
+      "userid": "test-user-0001",
+      "player_id": "test-player-0001"
+    }
+  },
+  {
+    "event": "media_item_played",
+    "object_id": "tidal--test0001://track/900026000",
+    "data": {
+      "uri": "tidal--test0001://track/900026000",
+      "media_type": "track",
+      "name": "A Low Tide",
+      "duration": 357,
+      "seconds_played": 30,
+      "fully_played": false,
+      "is_playing": false,
+      "mbid": null,
+      "artist": "Mire of Dusk",
+      "artists": [
+        "Mire of Dusk"
+      ],
+      "artist_mbids": [],
+      "album": "A Low Tide",
+      "album_mbid": null,
+      "album_artist": null,
+      "album_artist_mbids": null,
+      "image_url": "https://resources.tidal.com/images/f9705133/2276/2524/741e/05d15b10f802/750x750.jpg",
+      "version": "",
+      "userid": "test-user-0001",
+      "player_id": "test-player-0001"
+    }
+  },
+  {
+    "event": "media_item_played",
+    "object_id": "tidal--test0001://track/900027000",
+    "data": {
+      "uri": "tidal--test0001://track/900027000",
+      "media_type": "track",
+      "name": "The Edge of Morning",
+      "duration": 2348,
+      "seconds_played": 31,
+      "fully_played": false,
+      "is_playing": false,
+      "mbid": null,
+      "artist": "Larks",
+      "artists": [
+        "Larks"
+      ],
+      "artist_mbids": [],
+      "album": "Slowly Waking Room",
+      "album_mbid": null,
+      "album_artist": null,
+      "album_artist_mbids": null,
+      "image_url": "https://resources.tidal.com/images/004c5129/4771/3420/d7fd/c3df10a0df2c/750x750.jpg",
+      "version": "Live",
+      "userid": "test-user-0001",
+      "player_id": "test-player-0001"
+    }
+  }
+]
